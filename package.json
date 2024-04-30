@@ -56,9 +56,9 @@
     "vite-plugin-svgr": "^4.2.0"
   },
   "simple-git-hooks": {
-    "pre-commit": ["npx lint-staged", "npm run precommit"]
+    "pre-commit": "npx lint-staged && npm run precommit "
   },
   "lint-staged": {
-    "*.{vue,js,ts,jsx,tsx}": ["npm run lint:fix"]
+    "*.{vue,js,ts,jsx,tsx}": "npm run lint:fix"
   }
 }
