@@ -1,7 +1,6 @@
 import AuthProvider from 'react-auth-kit';
 import createStore from 'react-auth-kit/createStore';
 
-console.log(import.meta.env.VITE_AUTH_NAME);
 const store = createStore({
   authName: import.meta.env.VITE_AUTH_NAME,
   authType: 'localstorage',

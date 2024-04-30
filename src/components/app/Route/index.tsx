@@ -1,11 +1,13 @@
 import { createRouter, RouterProvider } from '@tanstack/react-router';
+import RouteLoading from './components/Loading';
 import { routeTree } from '@/routeTree.gen';
 
 const router = createRouter({
   routeTree,
   context: { isAuth: undefined! },
   defaultPreload: 'intent',
-  defaultPendingComponent: () => <div>Loading...</div>,
+  defaultPendingMs: 3000,
+  defaultPendingComponent: () => <RouteLoading />,
   defaultNotFoundComponent: () => <div>Global Not Found 23</div>,
 });
 
@@ -15,6 +17,7 @@ declare module '@tanstack/react-router' {
   }
   interface StaticDataRouteOption {
     name?: string;
+    hidden?: boolean;
   }
 }
 

@@ -2,14 +2,12 @@
 
 import RouteApp from './components/app/Route';
 import AuthApp from './components/app/AuthApp';
-import MantineApp from './components/app/Mantine';
 
+console.log(2);
 function App() {
   return (
     <AuthApp>
-      <MantineApp>
-        <RouteApp />
-      </MantineApp>
+      <RouteApp />
     </AuthApp>
   );
 }

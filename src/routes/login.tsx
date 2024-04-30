@@ -1,8 +1,6 @@
-import { Box, AppShell } from '@mantine/core';
 import { redirect, useNavigate, createFileRoute } from '@tanstack/react-router';
 import useSignIn from 'react-auth-kit/hooks/useSignIn';
 import { z } from 'zod';
-import FLoatInput from '@/components/ui/FloatInput';
 
 export const Route = createFileRoute('/login')({
   component: LoginPage,
@@ -39,15 +37,7 @@ function LoginPage() {
       navigate({ to: redirect });
   };
   return (
-    <AppShell
-      padding="xl"
-    >
-      <AppShell.Main className="flex items-center justify-center">
-        <Box className="h-[518px] w-[475px]" bg="rgb(33, 41, 70)">
-          2
-          <FLoatInput />
-        </Box>
-      </AppShell.Main>
-    </AppShell>
+    <button className="btn" onClick={_handleLogin}>click me </button>
+
   );
 }

@@ -1,5 +1,4 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { Button } from '@mantine/core';
 
 export const Route = createFileRoute('/_auth/')({
   component: Home,
@@ -11,7 +10,7 @@ export const Route = createFileRoute('/_auth/')({
 function Home() {
   return (
     <div>
-      <Button variant="filled">Button</Button>
+      <button className="btn">Button</button>
       Hello /_auth/!
     </div>
   );
