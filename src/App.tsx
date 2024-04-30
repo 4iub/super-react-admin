@@ -3,7 +3,7 @@
 import RouteApp from './components/app/Route';
 import AuthApp from './components/app/AuthApp';
 
-console.log(23123);
+console.log(45);
 function App() {
   return (
     <AuthApp>
